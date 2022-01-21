@@ -22,9 +22,13 @@ while True:
     if cv2.waitKey(1)&0xFF==ord('q'):
         break
     try:
-        if  x < 285:
+        if  x < 235:
             print("gauche")
-        elif x > 355:
+        elif x > 235 and x < 285:
+            print("leger gauche")
+        elif  x > 355 and x < 405:
+            print("leger droit")
+        elif x > 405:
             print("droite")
         else:
             print("ok")
