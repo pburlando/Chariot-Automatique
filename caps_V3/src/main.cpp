@@ -41,7 +41,6 @@ void setup() {
   //   delay(300);
   // }
   Serial.begin(115200);
-  Serial.println("hello");
   memTime = millis();
   memTimeSerial = millis();
 }
